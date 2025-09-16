@@ -41,7 +41,7 @@ export default function Hero() {
           {/* Download Resume */}
           <motion.a
             href="/Dhivakar.pdf"
-            download="Dhivakar-Resume.pdf"
+            download="Dhivakar.pdf"
             className="bg-gray-800 text-white px-6 py-3 rounded-lg shadow hover:bg-gray-900"
             whileHover={{ scale: 1.05 }}
           >
