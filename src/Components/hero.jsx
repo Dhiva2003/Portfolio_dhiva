@@ -6,7 +6,7 @@ export default function Hero() {
     <section
       id="hero"
       className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-blue-800 via-purple-500 to-pink-500 md:px-40 px-10 py-20"
-      style={{backgroundImage: 'url(/M.png)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+      style={{backgroundImage: `url(${import.meta.env.BASE_URL}M.png)`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
       {/* Left Side (Text + Buttons) */}
       <div className="flex-1 text-white">
         <motion.h2
