@@ -5,13 +5,13 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="h-screen flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-blue-800 via-purple-500 to-pink-500 px-6 md:px-20 gap-12 text-center md:text-left"
-    >
+      className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-blue-800 via-purple-500 to-pink-500 md:px-40 px-10 py-20"
+      style={{backgroundImage: 'url(/M.png)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
       {/* Left Side (Text + Buttons) */}
       <div className="flex-1 text-white">
         <motion.h2
-          className="text-4xl md:text-6xl font-bold"
-          initial={{ opacity: 0, y: 50 }}
+          className="text-4xl sm:text-5xl font-bold  drop-shadow-[0_0_20px_#ffa500]"
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
@@ -19,12 +19,12 @@ export default function Hero() {
         </motion.h2>
 
         <motion.p
-          className="mt-4 text-lg md:text-xl text-white/90"
+          className="mt-4 text-lg md:text-xl font-semibold text-white/90 drop-shadow-[0_0_15px_#ffa500]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          Full Stack Developer | React | Node.js
+         MERN Stack Aspirant | React | Node.js | Express | MongoDB
         </motion.p>
 
         {/* Buttons */}
@@ -42,7 +42,7 @@ export default function Hero() {
           <motion.a
             href={`${import.meta.env.BASE_URL}Dhivakar.pdf`}
             download="resume.pdf"
-            className="bg-gray-800 text-white px-6 py-3 rounded-lg shadow hover:bg-gray-900"
+            className="bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-gray-900"
             whileHover={{ scale: 1.05 }}
           >
             Download CV
