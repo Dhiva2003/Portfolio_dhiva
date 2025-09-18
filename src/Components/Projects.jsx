@@ -54,7 +54,7 @@ export default function Projects() {
 
          }   
          {
-          p.link && <p className="text-blue-500 text-center">View Project</p>
+          p.link && <a href={p.link} className="text-blue-500">View Project</a>
          }
           </motion.div>
         ))}
