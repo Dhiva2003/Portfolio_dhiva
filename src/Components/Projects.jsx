@@ -24,6 +24,7 @@ using the OpenWeather API. Users can search by city to view current
 temperature, humidity, wind speed, and conditions with intuitive icons.
 The app provides accurate forecasts with a simple, user-friendly interface
 for quick access to weather updates anytime`,
+link:"https://dhiva2003.github.io/D_Weather"
    
   }
 ];
@@ -52,6 +53,9 @@ export default function Projects() {
             p.rest && <p className="text-gray-600 text-left mt-4">{p.rest}</p>
 
          }   
+         {
+          p.link && <p className="text-blue-500">View Project</p>
+         }
           </motion.div>
         ))}
       </div>
